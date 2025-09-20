@@ -14,10 +14,7 @@ namespace Demo.modelConfigyrationEmployee
     {
         void IEntityTypeConfiguration<Employee>.Configure(EntityTypeBuilder<Employee> builder)
         {          
-            builder.Property(E => E.EmpName).
-           HasColumnName("EmployeeName").HasColumnType("varchar").HasMaxLength(50);
-            builder.Property(E => E.Salary).HasPrecision(10, 2);
-            builder.ToTable(T => T.HasCheckConstraint("check_Employee_Age", "[Age] Between 22 and 40"));
+           
         }
     }
 }

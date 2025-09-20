@@ -10,7 +10,7 @@ namespace Demo
     {
         public int DeptID { get; set; }
         public string DeotName { get; set; }
-        public DateTime Dateifceation { get; set; }
+        public DateTime? Dateifceation { get; set; }
         public int Serial { get; set; }    
     }
 }

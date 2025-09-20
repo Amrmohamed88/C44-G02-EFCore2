@@ -49,12 +49,14 @@ namespace Demo.DbContextDatabase
                 });
             
 
-            modelBuilder.ApplyConfiguration<Employee>(new EmployeeConfiguration());
-            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+           // modelBuilder.ApplyConfiguration<Employee>(new EmployeeConfiguration());
+            //modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             
         }
 
         DbSet<Employee> employees { get; set; }
+        DbSet<Department> departments { get; set; }
+        
 
 
     }

@@ -24,14 +24,14 @@ namespace Demo
         public int Age { get; set; }
         //[Required]
         //[DataType(DataType.EmailAddress)] // UI Hint [frontEnd]
-        public string Email { get; set; }
+        public string? Email { get; set; }
         //[DataType(DataType.Password)]
         public string? Password { get; set; }
 
         //[Required]
         //[Phone]  // appliction validation
         //[DataType(DataType.PhoneNumber)]
-        public string PhoneNumber { get; set; }
+        public string? PhoneNumber { get; set; }
 
         //[NotMapped]
         public string UserName => Email.Split('@')[0];
